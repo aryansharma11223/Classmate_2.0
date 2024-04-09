@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Rubik Scribble";
+    src: url(../../vendor/fonts/Rubik_Scribble/RubikScribble-Regular.ttf);
+}
+
+.main-name{
+    text-align: center;
+    padding: 3vh 1vw;
+}
+
+.main-name h1{
+    font-family: 'Rubik Scribble', sans-serif;
+    color: #fff;
+    background-color: rgb(26, 57, 104);
+    border-radius: 3px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
