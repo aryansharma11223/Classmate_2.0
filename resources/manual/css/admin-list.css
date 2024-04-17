@@ -1,0 +1,42 @@
+#list{
+	padding: 40px 20px 20px 20px;
+}
+
+#list table{
+	width: 100%;
+}
+
+#list table tr:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+
+#list table tr{
+	border: 1px solid #000;
+	border-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#list table tr:last-child{
+	border-bottom: 1px solid #000;
+	border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#list table td{
+	width: 100%;
+	margin: 2px;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+#list table td a{
+	padding: 0;
+	text-decoration: underline;
+}
+
+#list table td a:hover{
+	box-shadow: none;
+}

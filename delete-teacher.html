@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classmate | Update Teacher Details</title>
+
+	<!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Manual CSS Linking -->
+    <link rel="stylesheet" href="resources/manual/css/global.css">
+    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/name.css">
+    <link rel="stylesheet" href="resources/manual/css/admin-search.css">
+    <link rel="stylesheet" href="resources/manual/css/admin-delete.css">
+
+</head>
+<body>
+	<nav>
+        <div class="back-btn">
+            <a href="teachers-list.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+        </div>
+        <div class="logout-btn">
+            <h4>Hi, User Name</h4>
+            <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+    </nav>
+
+    <div class="main-name">
+        <h1>Classmate</h1>
+    </div>
+
+    <section id="delete-teacher">
+    	<div class="section-header">
+    		<h4>Delete Teacher</h4>
+    	</div>
+
+    	<div class="search-form">
+            <form method="post">
+            	<div class="form-field">
+            		<label for="teacher-reg-no">Teacher Registration Number:</label>
+            		<div>
+            			<input type="text" name="teacher-reg-no" id="teacher-reg-no" required>
+                    	<button>Search</button>
+            		</div>
+            	</div>
+                <div class="form-field"></div>
+                <div class="form-field">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name" disabled>
+                </div>
+
+                <div class="form-field">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob" disabled>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="father_name">Father's Name:</label>
+                        <input type="text" name="father_name" id="father_name" disabled>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mother_name">Mother's Name:</label>
+                        <input type="text" name="mother_name" id="mother_name" disabled>
+                    </div>
+
+                <div class="form-field">
+                    <label for="section">Primary Subject:</label>
+                    <input type="text" name="section" id="section" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label for="standard">Secondary Subject:</label>
+                    <input type="text" name="standard" id="standard" disabled>
+                </div>
+
+                <div class="form-field form-btn">
+                    <input type="submit" name="update-details" value="Delete Teacher">
+                </div>
+            </form>   
+        </div>
+    </section>
+</body>
+</html>

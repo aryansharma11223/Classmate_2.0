@@ -1,16 +1,31 @@
 nav{
-	padding: 20px 20px 0 0;
-	text-align: end;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 40px;
+}
+
+nav .back-btn a{
+	color: rgb(26, 57, 104);
+	border-radius: 12px;
+	background-color: rgb(239, 239, 239);
+}
+
+nav i{
+	margin-right: 5px;
 }
 
 nav h4{
 	margin-bottom: 15px;
 }
 
-nav a{
+nav .logout-btn a{
 	color: rgb(26, 57, 104);
 	background-color: rgb(239, 239, 239);
-	padding: 8px 12px;
-	border-radius: 4px;
 	font-weight: bold;
+}
+
+nav .logout-btn a:hover{
+	color: rgb(239, 239, 239);
+	background-color: rgb(26, 57, 104);
 }

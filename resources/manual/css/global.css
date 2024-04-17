@@ -16,3 +16,27 @@
     transition: all .2s ease;
     font-family: Merriweather, sans-serif; 
 }
+
+input,
+select,
+button,
+a{
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+button,
+a{
+    font-size: 12px;
+}
+
+input[type="submit"],
+button{
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a:hover{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3) inset;
+}

@@ -1,0 +1,36 @@
+#delete-student,
+#delete-teacher{
+	padding: 0 20px;
+}
+
+.section-header h4{
+	padding: 3px 0 3px 3px;
+	background-color: red;
+	color: #fff;
+}
+
+.search-form form .form-field div{
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.search-form form .form-field div button{
+	margin-left: 8px;
+	padding: 0;
+	background-color: rgba(26, 57, 104, 0.8);
+	color: #fff;
+}
+
+.search-form form .form-field div button:hover{
+	background-color: rgba(26, 57, 104, 0.9);
+}
+
+.search-form form .form-field.form-btn input[type="submit"]{
+	background-color: red;
+	color: #fff;
+	border: 0;
+}
+
+.search-form form .form-field.form-btn input[type="submit"]:hover{
+	background-color: crimson;
+}
