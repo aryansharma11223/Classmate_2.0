@@ -40,3 +40,8 @@ button:hover,
 a:hover{
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3) inset;
 }
+
+table{
+    max-height: 400px;
+    overflow: scroll;
+}

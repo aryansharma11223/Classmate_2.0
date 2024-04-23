@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Classmate | Subjects List</title>
+	<title>Classmate | Student's Attendance List</title>
 
 	<!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -30,30 +30,42 @@
 
     <section id="search">
         <div class="container-header">
-            <h4>Subjects List</h4>
+            <h4>Student's Attendance List</h4>
         </div>
     	<div class="search-form">
             <form method="post">
                 <div class="form-field">
+                    <label for="standard">Registration Number:</label>
+                    <input type="text" name="standard" id="standard">
+                </div>
+
+                <div class="form-field">
+                    <label for="standard">Student Name:</label>
+                    <input type="text" name="standard" id="standard">
+                </div>
+
+                <div class="form-field">
                     <label for="standard">Standard:</label>
-                    <input type="text" name="standard" id="standard" required>
+                    <input type="text" name="standard" id="standard">
                 </div>
 
                 <div class="form-field">
-                    <label for="teacher-f-name">Teacher's First Name</label>
-                    <input type="text" name="teacher-f-name" id="teacher-f-name" required>
+                    <label for="standard">Section:</label>
+                    <input type="text" name="standard" id="standard">
                 </div>
 
                 <div class="form-field">
-                    <label for="teacher-l-name">Teacher's Last Name</label>
-                    <input type="text" name="teacher-l-name" id="teacher-l-name" required>
+                    <label for="standard">From Date:</label>
+                    <input type="date" name="standard" id="standard">
+                </div>
+
+                <div class="form-field">
+                    <label for="standard">Till Date:</label>
+                    <input type="date" name="standard" id="standard">
                 </div>
 
                 <div class="form-field form-btn">
                     <input type="submit" name="search" value="Search">
-                    <a href="add-subject.html">Add Subject</a>
-                    <a href="#">Update Details</a>
-                    <a href="#">Delete Subject</a>
                 </div>
             </form>   
         </div>
@@ -63,20 +75,28 @@
         <table>
             <th>
                 <td>Sr. No.</td>
-                <td>Subject Name</td>
+                <td>Registration Number</td>
+                <td>Student Name</td>
                 <td>Standard</td>
                 <td>Section</td>
-                <td>Teacher's First Name</td>
-                <td>Teacher's Last Name</td>
+                <td>From Date</td>
+                <td>Till Date</td>
+                <td>Present</td>
+                <td>Absent</td>
+                <td>Total Attendance</td>
             </th>
 
             <tr>
                 <td>1</td>
-                <td>Computer</td>
+                <td>12</td>
+                <td>Aryan Sharma</td>
                 <td>12</td>
                 <td>A</td>
-                <td>Aryan</td>
-                <td>Sharma</td>
+                <td>-</td>
+                <td>-</td>
+                <td><input type="radio" name="attendance" id="present"></td>
+                <td><input type="radio" name="attendance" id="absent"></td>
+                <td>21</td>
             </tr>
         </table>
     </section>

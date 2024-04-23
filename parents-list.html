@@ -29,42 +29,49 @@
     </div>
 
     <section id="search">
+        <div class="container-header">
+            <h4>Parents List</h4>
+        </div>
     	<div class="search-form">
             <form method="post">
                 <div class="form-field">
                     <label for="reg-no">Registration Number:</label>
-                    <input type="text" name="reg-no" id="reg-no" required>
+                    <input type="text" name="reg-no" id="reg-no">
                 </div>
 
                 <div class="form-field">
                     <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input type="text" name="first-name" id="first-name">
                 </div>
 
                 <div class="form-field">
                     <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name" required>
+                    <input type="text" name="last-name" id="last-name">
                 </div>
 
                 <div class="form-field">
                     <label for="standard">Standard:</label>
-                    <input type="text" name="standard" id="standard" required>
+                    <input type="text" name="standard" id="standard">
                 </div>
 
                 <div class="form-field">
                     <label for="section">Section:</label>
-                    <input type="text" name="section" id="section" required>
+                    <input type="text" name="section" id="section">
                 </div>
 
                 <div class="form-field">
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" name="dob" id="dob" required>
+                    <label for="f-name">Father's Name:</label>
+                    <input type="text" name="f-name" id="f-name">
+                </div>
+
+                <div class="form-field">
+                    <label for="m-name">Mother's Name:</label>
+                    <input type="text" name="m-name" id="m-name">
                 </div>
 
                 <div class="form-field form-btn">
                     <input type="submit" name="search" value="Search">
                     <a href="update-student-details.html">Update Details</a>
-                    <a href="delete-student.html">Delete Student</a>
                 </div>
             </form>   
         </div>
@@ -79,7 +86,8 @@
                 <td>Last Name</td>
                 <td>Standard</td>
                 <td>Section</td>
-                <td>Date of Birth</td>
+                <td>Father's Name</td>
+                <td>Mother's Name</td>
                 <td></td>
             </th>
 
@@ -90,7 +98,8 @@
                 <td>Sharma</td>
                 <td>12</td>
                 <td>A</td>
-                <td>22/12/2000</td>
+                <td>Suresh Sharma</td>
+                <td>Rekha Sharma</td>
                 <td><a href="">View Details>>></a></td>
             </tr>
         </table>
