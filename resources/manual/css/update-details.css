@@ -2,9 +2,10 @@
 	padding: 0 20px;
 }
 
-#update-details .section-header h4{
-	padding: 3px 0 3px 3px;
-	background-color: gold;
+.section-header h4,
+.container-header h4{
+	padding: 3px 0 3px 3px !important;
+	background-color: gold !important;
 	color: #fff;
 }
 
@@ -24,12 +25,12 @@
 	background-color: rgba(26, 57, 104, 0.9);
 }
 
-.search-form form .form-field.form-btn input[type="submit"]{
-	background-color: gold;
-	border: 0;
-	color: #fff;
+form .form-field.form-btn input[type="submit"]{
+	background-color: gold !important;
+	border: 0 !important;
+	color: #fff !important;
 }
 
-.search-form form .form-field.form-btn input[type="submit"]:hover{
-	background-color: orange;
+form .form-field.form-btn input[type="submit"]:hover{
+	background-color: orange !important;
 }
