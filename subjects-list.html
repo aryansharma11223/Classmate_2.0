@@ -8,10 +8,10 @@
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-search.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-list.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+    <link rel="stylesheet" href="resources/manual/css/list.css">
 </head>
 <body>
 	<nav>
@@ -28,11 +28,11 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="search">
+    <section id="form">
         <div class="container-header">
             <h4>Subjects List</h4>
         </div>
-    	<div class="search-form">
+    	<div class="container-body">
             <form method="post">
                 <div class="form-field">
                     <label for="standard">Standard:</label>
@@ -49,11 +49,13 @@
                     <input type="text" name="teacher-l-name" id="teacher-l-name" required>
                 </div>
 
+                <div class="form-field"></div>
+
                 <div class="form-field form-btn">
                     <input type="submit" name="search" value="Search">
                     <a href="add-subject.html">Add Subject</a>
-                    <a href="#">Update Details</a>
-                    <a href="#">Delete Subject</a>
+                    <a href="update-subject-details.html">Update Details</a>
+                    <a href="delete-subject.html">Delete Subject</a>
                 </div>
             </form>   
         </div>

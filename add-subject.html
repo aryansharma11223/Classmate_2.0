@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Classmate | Add Subject</title>
 
-	<!-- Font Awesome CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<head>
+    <title>Classmate | Add Subject</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-add.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
 </head>
+
 <body>
-	<nav>
+    <nav>
         <div class="back-btn">
-            <a href="students-list.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+            <a href="subjects-list.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
         </div>
         <div class="logout-btn">
             <h4>Hi, User Name</h4>
@@ -27,36 +30,35 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="add-subject">
-    	<div class="container">
-    		<div class="container-header">
-    			<h4>Add Subject :</h4>
-    		</div>
-    		<div class="container-body">
-    			<form method="post">
-                    <div class="form-field">
-                        <label for="sub-name">Subject Name:</label>
-                        <input type="text" name="sub-name" id="sub-name" required>
-                    </div>
+    <section id="form">
+        <div class="container-header">
+            <h4>Add Subject</h4>
+        </div>
+        <div class="container-body">
+            <form method="post">
+                <div class="form-field">
+                    <label for="sub-name">Subject Name:</label>
+                    <input type="text" name="sub-name" id="sub-name" required>
+                </div>
 
-    				<div class="form-field">
-                        <label for="standard">Standard</label>
-                        <select name="standard" id="standard" required>
-                            <option>Select One</option>
-                            <option>Kindergarten (KG)</option>
-                            <option>1 to 5</option>
-                            <option>6 to 8</option>
-                            <option>9 & 10</option>
-                            <option>11 & 12</option>
-                        </select>
-                    </div>
+                <div class="form-field">
+                    <label for="standard">Standard</label>
+                    <select name="standard" id="standard" required>
+                        <option>Select One</option>
+                        <option>Kindergarten (KG)</option>
+                        <option>1 to 5</option>
+                        <option>6 to 8</option>
+                        <option>9 & 10</option>
+                        <option>11 & 12</option>
+                    </select>
+                </div>
 
-                    <div class="form-field form-btn">
-    					<input type="submit" name="submit" value="Add Subject">
-    				</div>
-                </form>
-    		</div>
-    	</div>
+                <div class="form-field form-btn">
+                    <input type="submit" name="submit" value="Add Subject">
+                </div>
+            </form>
+        </div>
     </section>
 </body>
+
 </html>

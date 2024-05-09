@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classmate | Delete Subject</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Manual CSS Linking -->
+    <link rel="stylesheet" href="resources/manual/css/global.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/name.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+    <link rel="stylesheet" href="resources/manual/css/list.css">
+
+    <style>
+        #form .container-header h4 {
+            background-color: red;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"] {
+            background-color: red;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]:hover {
+            background-color: crimson;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="back-btn">
+            <a href="subjects-list.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+        </div>
+        <div class="logout-btn">
+            <h4>Hi, User Name</h4>
+            <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+    </nav>
+
+    <div class="main-name">
+        <h1>Classmate</h1>
+    </div>
+
+    <section id="form">
+        <div class="container-header">
+            <h4>Delete Subject</h4>
+        </div>
+
+        <div class="container-body">
+            <form method="post">
+                <div class="form-field">
+                    <label for="teacher-reg-no">Subject Name:</label>
+                    <input type="text" name="teacher-reg-no" id="teacher-reg-no" required>
+                </div>
+                <div class="form-field">
+                    <label for="first-name">Subject Teacher Name:</label>
+                    <input type="text" name="first-name" id="first-name" disabled>
+                </div>
+                <div class="form-field">
+                    <label for="standard">Standard</label>
+                    <div class="mini-search">
+                        <select name="standard" id="standard" required>
+                            <option>Select One</option>
+                            <option>Kindergarten (KG)</option>
+                            <option>1 to 5</option>
+                            <option>6 to 8</option>
+                            <option>9 & 10</option>
+                            <option>11 & 12</option>
+                        </select>
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="form-field"></div>
+                <div class="form-field form-btn">
+                    <input type="submit" name="update-details" value="Delete Subject">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="list">
+        <table>
+            <th>
+                <td>Sr. No.</td>
+                <td>Subject Name</td>
+                <td>Subject Teacher's First Name</td>
+                <td>Subject Teacher's Last Name</td>
+                <td>Standard</td>
+                <td>Action</td>
+            </th>
+
+            <tr>
+                <td>1</td>
+                <td>Science</td>
+                <td>Aryan</td>
+                <td>Sharma</td>
+                <td>10</td>
+                <td>Delete</td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

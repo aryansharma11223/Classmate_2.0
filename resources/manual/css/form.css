@@ -1,0 +1,115 @@
+#form .container-header{
+    margin-top: 20px;
+	padding: 0 20px;
+}
+
+#form .container-header h4{
+    padding: 4px 0px 4px 4px;
+	background-color: lightgreen;
+}
+
+#form .container-body{
+    padding: 20px 0;
+}
+
+#form .container-body form{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#form .container-body form .form-field{
+    width: 595px;
+	max-width: 550px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 30px;
+}
+
+#form .container-body form .form-field .mini-search{
+	display: grid;
+	grid-template-columns: 80% 20%	;
+}
+
+#form .container-body form .form-field .mini-search button{
+	margin-left: 10px;
+	background-color: rgba(26, 57, 104, 0.8);
+	color: #fff;
+	font-weight: bold;
+}
+
+#form .container-body form .form-field .mini-search button:hover{
+	background-color: rgba(26, 57, 104, 0.9);
+}
+
+#form .container-body form .form-field label{
+    margin-bottom: 8px;
+}
+
+#form .container-body form .form-field input,
+#form .container-body form .form-field select{
+    border: 2px solid #000;
+}
+
+#form .container-body form .form-field select option{
+	margin: 5px 0;
+}
+
+#form .container-body form .form-field.form-btn{
+    padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+#form .container-body form .form-field.address{
+	flex-direction: row;
+	padding-top: 20px;
+}
+
+#form .container-body form .form-field.address input{
+	height: 20px;
+	width: 20px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+#form .container-body form .form-field.form-btn input[type="submit"],
+#form .container-body form .form-field.form-btn a{
+	width: fit-content;
+	margin: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#form .container-body form .form-field.form-btn input[type="submit"]{
+	background-color: lightgreen;
+	border: 0;
+}
+
+#form .container-body form .form-field.form-btn input[type="submit"]:hover{
+	background-color: green;
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(2){
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(2):hover{
+	background-color: rgba(128, 128, 128, 0.8);
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(3){
+	background-color: gold;
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(3):hover{
+	background-color: orange;
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(4){
+	background-color: red;
+}
+
+#form .container-body form .form-field.form-btn a:nth-child(4):hover{
+	background-color: crimson;
+}

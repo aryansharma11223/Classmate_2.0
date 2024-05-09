@@ -1,8 +1,5 @@
-#list{
-	padding: 40px 20px 20px 20px;
-}
-
 #list table{
+	padding: 0 20px;
 	width: 100%;
 }
 
@@ -32,6 +29,12 @@
 	padding: 5px 0px;
 }
 
+#list table td input{
+	padding: 4px;
+	border: 1px solid #000;
+	max-width: 60px;
+}
+
 #list table td a{
 	padding: 0;
 	text-decoration: underline;
@@ -39,4 +42,18 @@
 
 #list table td a:hover{
 	box-shadow: none;
+}
+
+#list .submit-btn{
+	padding: 20px;
+}
+
+#list .submit-btn input[type="submit"]{
+	background-color: rgba(26, 57, 104, 0.8);
+	color: #fff;
+	font-weight: bold;
+}
+
+#list .submit-btn input[type="submit"]:hover{
+	background-color: rgba(26, 57, 104, 0.9);
 }

@@ -8,10 +8,23 @@
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-search.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-delete.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+
+    <style>
+        #form .container-header h4{
+            background-color: red;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]{
+            background-color: red;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]:hover{
+            background-color: crimson;
+        }
+    </style>
 
 </head>
 <body>
@@ -29,16 +42,16 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="delete-teacher">
-    	<div class="section-header">
+    <section id="form">
+    	<div class="container-header">
     		<h4>Delete Teacher</h4>
     	</div>
 
-    	<div class="search-form">
+    	<div class="container-body">
             <form method="post">
             	<div class="form-field">
             		<label for="teacher-reg-no">Teacher Registration Number:</label>
-            		<div>
+            		<div class="mini-search">
             			<input type="text" name="teacher-reg-no" id="teacher-reg-no" required>
                     	<button>Search</button>
             		</div>
@@ -78,6 +91,8 @@
                     <label for="standard">Secondary Subject:</label>
                     <input type="text" name="standard" id="standard" disabled>
                 </div>
+
+                <div class="form-field"></div>
 
                 <div class="form-field form-btn">
                     <input type="submit" name="update-details" value="Delete Teacher">

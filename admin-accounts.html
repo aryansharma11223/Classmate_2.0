@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classmate | Accounts</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Manual CSS Linking -->
+    <link rel="stylesheet" href="resources/manual/css/global.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/name.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+    <link rel="stylesheet" href="resources/manual/css/list.css">
+
+    <style>
+        #list .personal-details{
+            margin-bottom: 20px;
+        }
+
+        #list .personal-details form{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #list .personal-details form .form-field{
+            width: 595px;
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 30px;
+        }
+
+        #list .personal-details form .form-field label{
+            margin-bottom: 8px;
+        }
+
+        #list .personal-details form .form-field input{
+            border: 2px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="back-btn">
+            <a href="admin-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+        </div>
+        <div class="logout-btn">
+            <h4>Hi, User Name</h4>
+            <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+    </nav>
+
+    <div class="main-name">
+        <h1>Classmate</h1>
+    </div>
+
+    <section id="form">
+        <div class="container-header">
+            <h4>Student Accounts</h4>
+        </div>
+
+        <div class="container-body">
+            <div class="search-form">
+                <form method="post">
+                    <div class="form-field">
+                        <label for="standard">Registration Number:</label>
+                        <input type="text" name="standard" id="stabdard">
+                    </div>
+
+                    <div class="form-field"></div>
+
+                    <div class="form-field form-btn">
+                        <input type="submit" name="search" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="list">
+        <div class="personal-details">
+            <form>
+                <div class="form-field">
+                    <label for="registration">Registration Number:</label>
+                    <input type="text" name="registration" id="registration" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label for="standard">Standard:</label>
+                    <input type="text" name="standard" id="standard" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label for="section">Section:</label>
+                    <input type="text" name="section" id="section" disabled>
+                </div>
+            </form>
+        </div>
+
+        <div class="account-details">
+            <table>
+                <th>
+                    <td>Sr. No.</td>
+                    <td>Facility Name</td>
+                    <td>From</td>
+                    <td>To</td>
+                    <td>Paid</td>
+                    <td>Due</td>
+                </th>
+                <tr>
+                    <td>1</td>
+                    <td>Tution Fees</td>
+                    <td><input type="date" name="tution_from" id="tution_from"></td>
+                    <td><input type="date" name="tution_to" id="tution_to"></td>
+                    <td><input type="radio" name="fee-status" id="paid"></td>
+                    <td><input type="radio" name="fee-status" id="due"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Transport Fees</td>
+                    <td><input type="date" name="transport_from" id="transport_from"></td>
+                    <td><input type="date" name="transport_to" id="transport_to"></td>
+                    <td><input type="radio" name="fee-status" id="paid"></td>
+                    <td><input type="radio" name="fee-status" id="due"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sports Activities</td>
+                    <td><input type="date" name="transport_from" id="transport_from"></td>
+                    <td><input type="date" name="transport_to" id="transport_to"></td>
+                    <td><input type="radio" name="fee-status" id="paid"></td>
+                    <td><input type="radio" name="fee-status" id="due"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Extra Corricular Activities</td>
+                    <td><input type="date" name="curricular_from" id="curricular_from"></td>
+                    <td><input type="date" name="curricular_to" id="curricular_to"></td>
+                    <td><input type="radio" name="fee-status" id="paid"></td>
+                    <td><input type="radio" name="fee-status" id="due"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Update Records">
+        </div>
+    </section>
+</body>
+</html>

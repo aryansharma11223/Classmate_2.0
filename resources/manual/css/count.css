@@ -1,0 +1,40 @@
+#total-count{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 1vw;
+}
+
+#total-count .total-count-category{
+	width: 392px;
+	max-width: 100%;
+	margin: 15px 0;
+	padding: 20px;
+	color: #fff;
+}
+
+#total-count .total-count-category:nth-child(1),
+#total-count .total-count-category:nth-child(2){
+	margin-right: 30px;
+}
+
+#total-count .total-count-category:nth-child(1){
+	background-color: rgb(246, 105, 85);
+}
+
+#total-count .total-count-category:nth-child(2){
+	background-color: rgb(0, 166, 90);
+}
+
+#total-count .total-count-category:nth-child(3){
+	background-color: rgb(0, 192, 239);
+}
+
+#total-count .total-count-category .total-count-number{
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+#total-count .total-count-category i{
+	margin-right: 10px;
+}

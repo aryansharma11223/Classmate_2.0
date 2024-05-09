@@ -17,6 +17,10 @@
     font-family: Merriweather, sans-serif; 
 }
 
+section{
+    padding: 20px;
+}
+
 input,
 select,
 button,

@@ -12,11 +12,23 @@
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-add.css">
-    <link rel="stylesheet" href="resources/manual/css/update-details.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-exam-schedule.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+
+    <style>
+        #form .container-header h4{
+            background-color: gold;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]{
+            background-color: gold;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]:hover{
+            background-color: orange;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,7 +46,7 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="update-schedule">
+    <section id="form">
         <div class="container">
             <div class="container-header">
                 <h4>Update Exam Schedule: </h4>
@@ -44,7 +56,7 @@
                 <form method="post">
                     <div class="form-field">
                         <label for="standard">Standard: </label>
-                        <div>
+                        <div class="mini-search">
                             <select name="standard" id="standard">
                                 <option value="default">Select One</option>
                                 <option value="pg">PG</option>

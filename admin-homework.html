@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Classmate | Subjects List</title>
+<html lang="en">
 
-	<!-- Font Awesome CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classmate | Homework Management</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
@@ -13,8 +17,9 @@
     <link rel="stylesheet" href="resources/manual/css/form.css">
     <link rel="stylesheet" href="resources/manual/css/list.css">
 </head>
+
 <body>
-	<nav>
+    <nav>
         <div class="back-btn">
             <a href="admin-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
         </div>
@@ -30,10 +35,10 @@
 
     <section id="form">
         <div class="container-header">
-            <h4>Standards List</h4>
+            <h4>Homework Management</h4>
         </div>
 
-    	<div class="container-body">
+        <div class="container-body">
             <form method="post">
                 <div class="form-field">
                     <label for="standard">Standard:</label>
@@ -41,21 +46,24 @@
                 </div>
 
                 <div class="form-field">
-                    <label for="teacher-f-name">Standard Advisor's First Name</label>
-                    <input type="text" name="teacher-f-name" id="teacher-f-name">
+                    <label for="advisor">Standard Advisor Name:</label>
+                    <input type="text" name="advisor" id="advisor">
                 </div>
 
                 <div class="form-field">
-                    <label for="teacher-l-name">Standard Advisor's Last Name</label>
-                    <input type="text" name="teacher-l-name" id="teacher-l-name">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
                 </div>
 
-                <div class="form-field"></div>
+                <div class="form-field">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
 
                 <div class="form-field form-btn">
-                    <input type="submit" name="search" value="Search">
+                    <input type="submit" value="Search">
                 </div>
-            </form>   
+            </form>
         </div>
     </section>
 
@@ -64,17 +72,22 @@
             <th>
                 <td>Sr. No.</td>
                 <td>Standard</td>
-                <td>Standard Advisor's First Name</td>
-                <td>Standard Advisor's Last Name</td>
+                <td>Subject</td>
+                <td>Standard Advisor Name</td>
+                <td>Date</td>
+                <td>Assignment File</td>
             </th>
 
             <tr>
                 <td>1</td>
                 <td>12</td>
-                <td>Aryan</td>
-                <td>Sharma</td>
+                <td>Hindi</td>
+                <td>Aryan Sharma</td>
+                <td>22-12-2000</td>
+                <td><a href="#">Download File</a></td>
             </tr>
         </table>
     </section>
 </body>
+
 </html>

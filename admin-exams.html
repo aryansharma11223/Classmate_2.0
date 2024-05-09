@@ -12,9 +12,21 @@
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
+    <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-exams.css">
+    <link rel="stylesheet" href="resources/manual/css/quick-icons.css">
+
+    <style>
+        #quick-icons .quick-icon-heading,
+        #quick-icons .quick-icons-container{
+            background-color: rgba(255, 255, 0, 0.8);
+        }
+
+        #quick-icons .quick-icons-container .menu-icon{
+            box-shadow: 0 0 5px 8px rgba(255, 255, 0, 0.8) inset;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -32,7 +44,43 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="container">
+    <section id="quick-icons">
+        <div class="quick-icon-heading">
+            <h4>Quick Icons</h4>
+        </div>
+
+        <div class="quick-icons-container">
+            <a href="create-exam-schedule.html" class="menu-icon">
+                <div class="icon">
+                    <i class="fa-solid fa-calendar-plus"></i>
+                </div>
+                <div class="icon-label">Create Schedule</div>
+            </a>
+
+            <a href="upload-exam-schedule.html" class="menu-icon">
+                <div class="icon">
+                    <i class="fa-solid fa-bomb"></i>
+                </div>
+                <div class="icon-label">Upload Schedule</div>
+            </a>
+
+            <a href="update-exam-schedule.html" class="menu-icon">
+                <div class="icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <div class="icon-label">Update Schedule</div>
+            </a>
+
+            <a href="delete-exam-schedule.html" class="menu-icon">
+                <div class="icon">
+                    <i class="fa-regular fa-calendar-xmark"></i>
+                </div>
+                <div class="icon-label">Delete Schedule</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- <section id="form">
         <div class="container-header">
             <h4>Exams Dashboard</h4>
         </div>
@@ -65,9 +113,8 @@
                 </div>
                 <div class="icon-label">Delete Schedule</div>
             </a>
-    </section>
-    </div>
-    </section>
+    </section> -->
+
 </body>
 
 </html>

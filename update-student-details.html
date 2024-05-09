@@ -8,10 +8,23 @@
 
     <!-- Manual CSS Linking -->
     <link rel="stylesheet" href="resources/manual/css/global.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-navbar.css">
-    <link rel="stylesheet" href="resources/manual/css/name.css">
-    <link rel="stylesheet" href="resources/manual/css/admin-search.css">
-    <link rel="stylesheet" type="text/css" href="resources/manual/css/update-details.css">
+	<link rel="stylesheet" href="resources/manual/css/navbar.css">
+	<link rel="stylesheet" href="resources/manual/css/name.css">
+    <link rel="stylesheet" href="resources/manual/css/form.css">
+
+    <style>
+        #form .container-header h4{
+            background-color: gold;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]{
+            background-color: gold;
+        }
+
+        #form .container-body form .form-field.form-btn input[type="submit"]:hover{
+            background-color: orange;
+        }
+    </style>
 
 </head>
 <body>
@@ -29,16 +42,16 @@
         <h1>Classmate</h1>
     </div>
 
-    <section id="update-details">
-    	<div class="section-header">
+    <section id="form">
+    	<div class="container-header">
     		<h4>Update Student Details</h4>
     	</div>
 
-    	<div class="search-form">
+    	<div class="container-body">
             <form method="post">
             	<div class="form-field">
             		<label for="student-reg-no">Student Registration Number:</label>
-            		<div>
+            		<div class="mini-search">
             			<input type="text" name="student-reg-no" id="student-reg-no" required>
                     	<button>Search</button>
             		</div>
@@ -78,6 +91,8 @@
                     <label for="section">Section:</label>
                     <input type="text" name="section" id="section" disabled>
                 </div>
+
+                <div class="form-field"></div>
 
                 <div class="form-field form-btn">
                     <input type="submit" name="update-details" value="Update Details">
