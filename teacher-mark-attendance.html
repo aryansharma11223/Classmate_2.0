@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classmate | Create Credentials</title>
+    <title>Classmate | Mark Attendence</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css"
@@ -19,7 +19,7 @@
 <body>
     <nav>
         <div class="back-btn">
-            <a href="admin-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+            <a href="teacher-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
         </div>
         <div class="logout-btn">
             <h4>Hi, User Name</h4>
@@ -33,7 +33,7 @@
 
     <section id="form">
         <div class="container-header">
-            <h4>Create Credentials</h4>
+            <h4>Mark Attendence</h4>
         </div>
 
         <div class="container-body">
@@ -43,35 +43,19 @@
                     <input type="text" name="registration" id="registration">
                 </div>
                 <div class="form-field">
-                    <label for="role">Role:</label>
-                    <div class="mini-search">
-                        <select name="role" id="role">
-                            <option value="select-one">Select One</option>
-                            <option value="admin">Admin</option>
-                            <option value="student">Student</option>
-                            <option value="teacher">Teacher</option>
-                        </select>
-                        <button>Search</button>
-                    </div>
-                </div>
-                <div class="form-field">
                     <label for="f_name">First Name:</label>
-                    <input type="text" name="f_name" id="f_name" disabled>
+                    <input type="text" name="f_name" id="f_name">
                 </div>
                 <div class="form-field">
                     <label for="l_name">Last Name:</label>
-                    <input type="text" name="l_name" id="l_name" disabled>
+                    <input type="text" name="l_name" id="l_name">
                 </div>
                 <div class="form-field">
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username" disabled>
-                </div>
-                <div class="form-field">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" disabled>
+                    <label for="from">Date:</label>
+                    <input type="date" name="from" id="from">
                 </div>
                 <div class="form-field form-btn">
-                    <input type="submit" value="Update Credentials">
+                    <input type="submit" value="Search">
                 </div>
             </form>
         </div>
@@ -81,26 +65,31 @@
         <table>
             <th>
                 <td>Sr. No.</td>
-                <td>Reg. Number</td>
+                <td>Registration Number</td>
                 <td>First Name</td>
                 <td>Last Name</td>
-                <td>Role</td>
-                <td>Username</td>
-                <td>Password</td>
-                <td></td>
+                <td>Date</td>
+                <td>Present</td>
+                <td>Absent</td>
             </th>
-
             <tr>
                 <td>1</td>
-                <td>2233</td>
+                <td>1001</td>
                 <td>Aryan</td>
                 <td>Sharma</td>
-                <td>Student</td>
-                <td>aryan</td>
-                <td>aryan</td>
-                <td><a href="">Update Credentials</a></td>
+                <td>10-05-2024</td>
+                <td>
+                    <input type="radio" name="attendence" id="present">
+                </td>
+                <td>
+                    <input type="radio" name="attendence" id="absent">
+                </td>
             </tr>
         </table>
+
+        <div class="submit-btn">
+            <input type="submit" value="Update">
+        </div>
     </section>
 </body>
 </html>

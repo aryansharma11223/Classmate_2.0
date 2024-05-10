@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classmate | Exams Marks</title>
+    <title>Classmate | Exam Schedule</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css"
@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="resources/manual/css/navbar.css">
     <link rel="stylesheet" href="resources/manual/css/name.css">
     <link rel="stylesheet" href="resources/manual/css/form.css">
-    <link rel="stylesheet" href="resources/manual/css/list.css">
 </head>
 
 <body>
     <nav>
         <div class="back-btn">
-            <a href="admin-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
+            <a href="teacher-landing.html"><i class="fa-solid fa-hand-point-left"></i>Back</a>
         </div>
         <div class="logout-btn">
             <h4>Hi, User Name</h4>
@@ -35,14 +34,14 @@
 
     <section id="form">
         <div class="container-header">
-            <h4>Exam Marks</h4>
+            <h4>Exam Schedule</h4>
         </div>
 
         <div class="container-body">
-            <div class="search-form">
-                <form method="post">
-                    <div class="form-field">
-                        <label for="standard">Standard:</label>
+            <form method="post">
+                <div class="form-field">
+                    <label for="standard">Standard: </label>
+                    <div class="mini-search">
                         <select name="standard" id="standard">
                             <option value="default">Select One</option>
                             <option value="pg">PG</option>
@@ -61,63 +60,39 @@
                             <option value="eleventh">11th</option>
                             <option value="twelveth">12th</option>
                         </select>
+                        <button>Search</button>
                     </div>
+                </div>
 
-                    <div class="form-field">
-                        <label for="section">Section</label>
-                        <input type="text" name="section" id="section">
-                    </div>
+                <div class="form-field">
+                    <label for="hindi">Hindi:</label>
+                    <input type="date" name="hindi" id="hindi">
+                </div>
 
-                    <div class="form-field">
-                        <label for="advisor">Standard Advisor's Name</label>
-                        <input type="text" name="advisor" id="advisor">
-                    </div>
+                <div class="form-field">
+                    <label for="English">English:</label>
+                    <input type="date" name="english" id="english">
+                </div>
 
-                    <div class="form-field"></div>
+                <div class="form-field">
+                    <label for="mathematics">Mathematics:</label>
+                    <input type="date" name="mathematics" id="mathematics">
+                </div>
 
-                    <div class="form-field form-btn">
-                        <input type="submit" name="search" value="Search">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+                <div class="form-field">
+                    <label for="science">Science:</label>
+                    <input type="date" name="science" id="science">
+                </div>
 
-    <section id="list">
-        <table>
-            <th>
-                <td>Roll No.</td>
-                <td>Student Name</td>
-                <td>Hindi</td>
-                <td>English</td>
-                <td>Mathematics</td>
-                <td>Science</td>
-                <td>Computer</td>
-            </th>
+                <div class="form-field">
+                    <label for="computer">Computer:</label>
+                    <input type="date" name="computer" id="computer">
+                </div>
 
-            <tr>
-                <td>1</td>
-                <td>Aryan Sharma</td>
-                <td>
-                    <input type="text" name="hindi" id="hindi">
-                </td>
-                <td>
-                    <input type="text" name="english" id="english">
-                </td>
-                <td>
-                    <input type="text" name="mathematics" id="mathematics">
-                </td>
-                <td>
-                    <input type="text" name="science" id="science">
-                </td>
-                <td>
-                    <input type="text" name="computer" id="computer">
-                </td>
-            </tr>
-        </table>
-
-        <div class="submit-btn">
-            <input type="submit" value="Update">
+                <div class="form-field form-btn">
+                    <input type="submit" name="submit" value="Create Schedule">
+                </div>
+            </form>
         </div>
     </section>
 </body>
