@@ -24,7 +24,8 @@ section{
 input,
 select,
 button,
-a{
+a,
+textarea{
     padding: 8px 12px;
     border-radius: 4px;
 }

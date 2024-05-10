@@ -47,7 +47,8 @@
 }
 
 #form .container-body form .form-field input,
-#form .container-body form .form-field select{
+#form .container-body form .form-field select,
+#form .container-body form .form-field textarea{
     border: 2px solid #000;
 }
 
